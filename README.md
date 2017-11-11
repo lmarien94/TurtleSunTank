@@ -1,2 +1,2 @@
 # TurtleSunTank
-Automated sun tank for my turtles
+This is a project for the course I-prototyping @ the University of Antwerp.
