@@ -1829,6 +1829,13 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <wire x1="561.34" y1="297.18" x2="561.34" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="DATAPIN_DHT11" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="PH5(OC4C)"/>
+<wire x1="375.92" y1="238.76" x2="353.06" y2="238.76" width="0.1524" layer="91"/>
+<label x="353.06" y="238.76" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

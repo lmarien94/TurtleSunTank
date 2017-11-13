@@ -1522,7 +1522,7 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="C_ERJ8ENF1002V" deviceset="ERJ-8ENF1002V" device="" value="10K"/>
-<part name="U1" library="C_1066" deviceset="1066" device=""/>
+<part name="BATTERY" library="C_1066" deviceset="1066" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1530,20 +1530,20 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 </plain>
 <instances>
 <instance part="IC1" gate="1" x="411.48" y="299.72"/>
-<instance part="BC3" gate="G$1" x="314.96" y="304.8" rot="R90"/>
-<instance part="BC2" gate="G$1" x="299.72" y="304.8" rot="R90"/>
-<instance part="BC1" gate="G$1" x="284.48" y="304.8" rot="R90"/>
-<instance part="GND1" gate="1" x="299.72" y="299.72"/>
-<instance part="P+1" gate="VCC" x="299.72" y="330.2"/>
-<instance part="CRYSTAL1" gate="G$1" x="292.1" y="365.76"/>
-<instance part="C1" gate="G$1" x="281.94" y="353.06"/>
-<instance part="C2" gate="G$1" x="312.42" y="353.06"/>
-<instance part="GND2" gate="1" x="302.26" y="345.44"/>
-<instance part="LED1" gate="G$1" x="312.42" y="284.48"/>
+<instance part="BC3" gate="G$1" x="322.58" y="314.96" rot="R90"/>
+<instance part="BC2" gate="G$1" x="307.34" y="314.96" rot="R90"/>
+<instance part="BC1" gate="G$1" x="292.1" y="314.96" rot="R90"/>
+<instance part="GND1" gate="1" x="307.34" y="309.88"/>
+<instance part="P+1" gate="VCC" x="307.34" y="340.36"/>
+<instance part="CRYSTAL1" gate="G$1" x="299.72" y="375.92"/>
+<instance part="C1" gate="G$1" x="289.56" y="363.22"/>
+<instance part="C2" gate="G$1" x="320.04" y="363.22"/>
+<instance part="GND2" gate="1" x="309.88" y="355.6"/>
+<instance part="LED1" gate="G$1" x="320.04" y="294.64"/>
 <instance part="LED2" gate="G$1" x="505.46" y="373.38" rot="MR0"/>
-<instance part="R1" gate="G$1" x="289.56" y="284.48"/>
+<instance part="R1" gate="G$1" x="297.18" y="294.64"/>
 <instance part="R2" gate="G$1" x="528.32" y="373.38" rot="MR0"/>
-<instance part="GND3" gate="1" x="281.94" y="284.48" rot="R270"/>
+<instance part="GND3" gate="1" x="289.56" y="294.64" rot="R270"/>
 <instance part="GND4" gate="1" x="535.94" y="373.38" rot="MR270"/>
 <instance part="IC2" gate="G$1" x="528.32" y="314.96"/>
 <instance part="CRYSTAL2" gate="G$1" x="508" y="350.52"/>
@@ -1553,7 +1553,7 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <instance part="P+3" gate="VCC" x="492.76" y="345.44"/>
 <instance part="GND5" gate="1" x="528.32" y="289.56"/>
 <instance part="R5" gate="G$1" x="541.02" y="335.28"/>
-<instance part="U1" gate="G$1" x="558.8" y="297.18" rot="MR0"/>
+<instance part="BATTERY" gate="G$1" x="558.8" y="297.18" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -1566,12 +1566,12 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 </segment>
 <segment>
 <pinref part="CRYSTAL1" gate="G$1" pin="2"/>
-<wire x1="312.42" y1="365.76" x2="325.12" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="365.76" x2="325.12" y2="353.06" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="375.92" x2="332.74" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="375.92" x2="332.74" y2="363.22" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="325.12" y1="353.06" x2="325.12" y2="342.9" width="0.1524" layer="91"/>
-<junction x="325.12" y="353.06"/>
-<label x="325.12" y="342.9" size="1.778" layer="95" rot="MR0"/>
+<wire x1="332.74" y1="363.22" x2="332.74" y2="353.06" width="0.1524" layer="91"/>
+<junction x="332.74" y="363.22"/>
+<label x="332.74" y="353.06" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -1582,12 +1582,12 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 </segment>
 <segment>
 <pinref part="CRYSTAL1" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="365.76" x2="281.94" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="365.76" x2="281.94" y2="353.06" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="375.92" x2="289.56" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="375.92" x2="289.56" y2="363.22" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="353.06" x2="281.94" y2="342.9" width="0.1524" layer="91"/>
-<junction x="281.94" y="353.06"/>
-<label x="281.94" y="342.9" size="1.778" layer="95"/>
+<wire x1="289.56" y1="363.22" x2="289.56" y2="353.06" width="0.1524" layer="91"/>
+<junction x="289.56" y="363.22"/>
+<label x="289.56" y="353.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -1623,20 +1623,20 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <segment>
 <pinref part="BC1" gate="G$1" pin="+"/>
 <pinref part="BC2" gate="G$1" pin="+"/>
-<wire x1="284.48" y1="325.12" x2="299.72" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="335.28" x2="307.34" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="BC3" gate="G$1" pin="+"/>
-<wire x1="314.96" y1="325.12" x2="299.72" y2="325.12" width="0.1524" layer="91"/>
-<junction x="299.72" y="325.12"/>
+<wire x1="322.58" y1="335.28" x2="307.34" y2="335.28" width="0.1524" layer="91"/>
+<junction x="307.34" y="335.28"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="299.72" y1="325.12" x2="299.72" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="325.12" x2="325.12" y2="325.12" width="0.1524" layer="91"/>
-<junction x="314.96" y="325.12"/>
-<label x="325.12" y="325.12" size="1.778" layer="95"/>
+<wire x1="307.34" y1="335.28" x2="307.34" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="335.28" x2="332.74" y2="335.28" width="0.1524" layer="91"/>
+<junction x="322.58" y="335.28"/>
+<label x="332.74" y="335.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="327.66" y1="284.48" x2="335.28" y2="284.48" width="0.1524" layer="91"/>
-<label x="335.28" y="284.48" size="1.778" layer="95"/>
+<wire x1="335.28" y1="294.64" x2="342.9" y2="294.64" width="0.1524" layer="91"/>
+<label x="342.9" y="294.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1664,28 +1664,28 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <segment>
 <pinref part="BC1" gate="G$1" pin="-"/>
 <pinref part="BC2" gate="G$1" pin="-"/>
-<wire x1="284.48" y1="304.8" x2="299.72" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="314.96" x2="307.34" y2="314.96" width="0.1524" layer="91"/>
 <pinref part="BC3" gate="G$1" pin="-"/>
-<wire x1="299.72" y1="304.8" x2="314.96" y2="304.8" width="0.1524" layer="91"/>
-<junction x="299.72" y="304.8"/>
+<wire x1="307.34" y1="314.96" x2="322.58" y2="314.96" width="0.1524" layer="91"/>
+<junction x="307.34" y="314.96"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="299.72" y1="304.8" x2="299.72" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="304.8" x2="325.12" y2="304.8" width="0.1524" layer="91"/>
-<junction x="314.96" y="304.8"/>
-<label x="325.12" y="304.8" size="1.778" layer="95"/>
+<wire x1="307.34" y1="314.96" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="314.96" x2="332.74" y2="314.96" width="0.1524" layer="91"/>
+<junction x="322.58" y="314.96"/>
+<label x="332.74" y="314.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="353.06" x2="302.26" y2="353.06" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="363.22" x2="309.88" y2="363.22" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="302.26" y1="353.06" x2="312.42" y2="353.06" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="347.98" x2="302.26" y2="353.06" width="0.1524" layer="91"/>
-<junction x="302.26" y="353.06"/>
+<wire x1="309.88" y1="363.22" x2="320.04" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="358.14" x2="309.88" y2="363.22" width="0.1524" layer="91"/>
+<junction x="309.88" y="363.22"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="289.56" y1="284.48" x2="284.48" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="294.64" x2="292.1" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -1697,7 +1697,7 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="528.32" y1="292.1" x2="528.32" y2="297.18" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="-"/>
+<pinref part="BATTERY" gate="G$1" pin="-"/>
 <wire x1="528.32" y1="297.18" x2="528.32" y2="299.72" width="0.1524" layer="91"/>
 <wire x1="538.48" y1="297.18" x2="528.32" y2="297.18" width="0.1524" layer="91"/>
 <junction x="528.32" y="297.18"/>
@@ -1714,7 +1714,7 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="K"/>
-<wire x1="307.34" y1="284.48" x2="312.42" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="294.64" x2="320.04" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1804,7 +1804,7 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <junction x="492.76" y="340.36"/>
 </segment>
 </net>
-<net name="SQW/OUT" class="0">
+<net name="SQW" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="SQW/OUT"/>
 <wire x1="543.56" y1="317.5" x2="558.8" y2="317.5" width="0.1524" layer="91"/>
@@ -1814,13 +1814,19 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <junction x="558.8" y="317.5"/>
 <label x="568.96" y="317.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="1" pin="(OC3B/INT4)PE4"/>
+<wire x1="447.04" y1="276.86" x2="457.2" y2="276.86" width="0.1524" layer="91"/>
+<label x="457.2" y="276.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VBAT"/>
-<wire x1="543.56" y1="312.42" x2="558.8" y2="312.42" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="+"/>
-<wire x1="558.8" y1="312.42" x2="558.8" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="543.56" y1="312.42" x2="561.34" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="+"/>
+<wire x1="558.8" y1="297.18" x2="561.34" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="561.34" y1="297.18" x2="561.34" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

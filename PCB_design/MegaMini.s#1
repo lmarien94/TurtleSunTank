@@ -1836,48 +1836,6 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <label x="347.98" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EN" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A8)PC0"/>
-<wire x1="447.04" y1="312.42" x2="462.28" y2="312.42" width="0.1524" layer="91"/>
-<label x="462.28" y="312.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RS" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A9)PC1"/>
-<wire x1="447.04" y1="314.96" x2="462.28" y2="314.96" width="0.1524" layer="91"/>
-<label x="462.28" y="314.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB7" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A10)PC2"/>
-<wire x1="447.04" y1="317.5" x2="462.28" y2="317.5" width="0.1524" layer="91"/>
-<label x="462.28" y="317.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB6" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A11)PC3"/>
-<wire x1="447.04" y1="320.04" x2="462.28" y2="320.04" width="0.1524" layer="91"/>
-<label x="462.28" y="320.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB5" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A12)PC4"/>
-<wire x1="447.04" y1="322.58" x2="462.28" y2="322.58" width="0.1524" layer="91"/>
-<label x="462.28" y="322.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB4" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(A13)PC5"/>
-<wire x1="447.04" y1="325.12" x2="462.28" y2="325.12" width="0.1524" layer="91"/>
-<label x="462.28" y="325.12" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DATAPIN_DS18B20_1" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="PH4(OC4B)"/>
@@ -1890,6 +1848,55 @@ Source: &lt;a href="http://www.keyelco.com/product-pdf.cfm?p=723"&gt; Datasheet 
 <pinref part="IC1" gate="1" pin="PH3(OC4A)"/>
 <wire x1="375.92" y1="233.68" x2="347.98" y2="233.68" width="0.1524" layer="91"/>
 <label x="347.98" y="233.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB4" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A14)PC6"/>
+<wire x1="447.04" y1="327.66" x2="462.28" y2="327.66" width="0.1524" layer="91"/>
+<label x="462.28" y="327.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB5" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A13)PC5"/>
+<wire x1="447.04" y1="325.12" x2="462.28" y2="325.12" width="0.1524" layer="91"/>
+<label x="462.28" y="325.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB6" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A12)PC4"/>
+<wire x1="447.04" y1="322.58" x2="462.28" y2="322.58" width="0.1524" layer="91"/>
+<label x="462.28" y="322.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB7" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A11)PC3"/>
+<wire x1="447.04" y1="320.04" x2="462.28" y2="320.04" width="0.1524" layer="91"/>
+<label x="462.28" y="320.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A10)PC2"/>
+<wire x1="447.04" y1="317.5" x2="462.28" y2="317.5" width="0.1524" layer="91"/>
+<label x="462.28" y="317.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(A9)PC1"/>
+<wire x1="447.04" y1="314.96" x2="462.28" y2="314.96" width="0.1524" layer="91"/>
+<label x="462.28" y="314.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SERVO_CONTROL" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="(OC1A/PCINT5)PB5"/>
+<wire x1="447.04" y1="347.98" x2="459.74" y2="347.98" width="0.1524" layer="91"/>
+<label x="459.74" y="347.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
