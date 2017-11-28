@@ -1,19 +1,38 @@
 $fn=100;
 
+//Parameter lijst, wordt later nog in een afzonderlijk bestand gestoken.
+xSizeReal = 55;
+ySizeReal = 60;
+zSizeReal = 10;
+
+xAdjustedSize1 = 54;
+yAdjustedSize1 = 59;
+zAdjustedSize1 = 9;
+
+xAdjustedSize2 = 53;
+yAdjustedSize2 = 59;
+zAdjustedSize2 = 8;
+
+radiusCircle = 1;
+radiusSphere = 2;
+
+
+//Functie voor de doos
 difference() {
+    //Gebruikmakend van de minskowski functie om zo makkelijk rondingen te creëren
     minkowski(){
-        cube([60,50,10], center = true);
-        sphere(2);
+        cube([xSizeReal,ySizeReal,zSizeReal], center = true);
+        sphere(radiusSphere);
         }
         
-    //Top eraf
-    translate([0,0,5]) cube([58,48,8], center = true);
+    //Top eraf 
+    translate([0,0,5]) cube([xAdjustedSize2,yAdjustedSize2,zAdjustedSize2], center = true);
         
     translate([0,0,5]){
         linear_extrude(10){
             minkowski(){
-                square([59,49], center = true);
-                circle(1);
+                square([xAdjustedSize1,yAdjustedSize1], center = true);
+                circle(radiusCircle);
                 }
             }
         }
@@ -21,7 +40,10 @@ difference() {
      //Uithollen van de binnenkant
      translate([0,0,0]);
      minkowski(){
-         cube([58,48,8], center = true);
+         cube([xAdjustedSize2,yAdjustedSize,zAdjustedSize2], center = true);
          sphere(1);
          }   
 }
+
+
+
