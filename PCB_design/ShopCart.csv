@@ -1,0 +1,18 @@
+﻿Artikelnr.,Ordercode,RoHS-compatibel?,Opmerkingen,Hoeveelheid,Artikelnummer fabrikant,Naam fabrikant,Fabrikant / beschrijving,Beschikbaarheid,Prijs per stuk,Artikelprijs,Prijs na korting
+1,1288330,YES,,1.0,"ATMEGA2560-16AU",MICROCHIP,"Controller Family/Series:ATmega; CPU Speed:16MHz; Program Memory Size:256KB; RAM Memory Size:8KB; No. of Pins:100Pins; MCU Case Style:TQFP; No. of I/O's:86I/O's; Embedded Interface Typ",1339,10.3700,10.37,,
+2,1414715,YES,,10.0,"C1206C104K5RACTU",KEMET,"Ceramic Capacitor Case:1206 [3216 Metric]; Capacitance:0.1µF; Voltage Rating:50V; Capacitance Tolerance:± 10%; Dielectric Characteristic:X7R; Product Range:C Series; Packaging:Cut Tape;",168865,0.0537,0.54,,
+3,2322071,YES,,1.0,"150060RS75000",WURTH ELEKTRONIK,"LED Colour:Red; LED Mounting:SMD; Bulb Size:-; Forward Current If:30mA; Forward Voltage:2V; Wavelength Typ:625nm; Luminous Intensity:250mcd; Viewing Angle:140°; Lens Shape:Rectangular; Pack",24946,0.1660,0.17,,
+4,2307726,YES,,10.0,"ERJ8ENF4700V",PANASONIC ELECTRONIC COMPONENTS,"Resistance:470ohm; Voltage Rating:200V; Resistor Case Style:1206 [3216 Metric]; Power Rating:250mW; Resistance Tolerance:± 1%; Product Range:ERJ8E Series; Packaging:Cut Tape; Resis",1999,0.0399,0.40,,
+5,2063983,YES,,1.0,"FOXSDLF/160-20",FOX ELECTRONICS,"Frequency Nom:16MHz; Crystal Case:SMD, 11.7mm x 5mm; Frequency Stability + / -:50ppm; Load Capacitance:20pF; Frequency Tolerance + / -:30ppm; Product Range:HC49SDLF Series; Operating Temperat",483,0.3010,0.30,,
+6,1650892,YES,,10.0,"C1206C120J5GACTU",KEMET,"Ceramic Capacitor Case:1206 [3216 Metric]; Capacitance:12pF; Voltage Rating:50V; Capacitance Tolerance:± 5%; Dielectric Characteristic:C0G / NP0; Product Range:C Series; Packaging:Cut",4658,0.1680,1.68,,
+7,2396052,YES,,1.0,"FSM4JRT",ALCOSWITCH - TE CONNECTIVITY,"Illumination:Non Illuminated; Contact Voltage DC Nom:24V; Contact Current Max:50mA; Operating Force:160gf; Switch Terminals:Through Hole; Product Range:FSMJRT Series; SVHC:No SVHC (12-J",36201,0.0930,0.09,,
+8,2307295,YES,,10.0,"ERJ8ENF1002V",PANASONIC ELECTRONIC COMPONENTS,"Resistance:10kohm; Voltage Rating:200V; Resistor Case Style:1206 [3216 Metric]; Power Rating:250mW; Resistance Tolerance:± 1%; Product Range:AEC-Q200 ERJ8E Series; Packaging:Cut Tap",11810,0.0329,0.33,,
+9,2322084,YES,,1.0,"150120BS75000",WURTH ELEKTRONIK,"LED Colour:Blue; LED Mounting:SMD; Bulb Size:-; Forward Current If:30mA; Forward Voltage:3.2V; Wavelength Typ:470nm; Luminous Intensity:145mcd; Viewing Angle:140°; Lens Shape:Rectangular;",3945,0.3100,0.31,,
+10,1278036,YES,,1.0,"Q13FC13500004 FC-135 32.768KHZ 12.5PF",EPSON,"Frequency Nom:32.768kHz; Crystal Case:SMD, 3.2mm x 1.5mm; Frequency Stability + / -:-; Load Capacitance:12.5pF; Frequency Tolerance + / -:20ppm; Product Range:FC-135 Series; Operatin",12884,1.6300,1.63,,
+11,908642,YES,,1.0,"3001",KEYSTONE,"Battery Sizes Accepted:Coin Cell - 12mm; Battery Terminals:PCB Pins; Contact Material:Phosphor Bronze; Contact Plating:Nickel Plated Contacts; Product Range:-; SVHC:No SVHC (20-Jun-2016);",1185,3.3900,3.39,,
+
+,,,,,,,Subtotaal,19.21
+,,,,,,,Totaal aantal goederen,19.21
+,,,,,,,Standaard,0.00
+,,,,,,,BTW,Onbekend
+,,,,,,,Totaal,19.21
