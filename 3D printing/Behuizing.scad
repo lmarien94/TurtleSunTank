@@ -14,8 +14,20 @@ dikte = 2;
 fillet = 0.1;
 
 //Ventilatiegaten
-ventilatiegatenBoven = 1;
-ventilatiegatenOnder = 8;
+ventilatiegatenSpacingBoven = 1;
+ventilatiegatenSpacingOnder = 8;
+//Zorgen dat de ventilatiegaten door de behuizing komen
+ventilatiegatenDikte = dikte*2;
+//De lengte van de ventilatiegaten
+ventilatiegatenLengte = dikte*2;
+
+//Bevestiging
+bevestigingDiameterCilinder = 16;
+//0.8 om te vermenigvulden met een integer om zo de correcte 
+//M-waarde van een schroef te krijgen
+schroefgatendiameterCilinder = 0.8;
+
+
 
 
 
@@ -56,140 +68,135 @@ module doos() {
  }
  }
 
+//Deze module zal de bevestiging produceren welke op de behuizing gezet wordt
  module bevestiging() {
      dikte = dikte*2;
      difference() {
-     union() {
-         translate([3*dikte + 5, dikte, hoogte/2]) {
-             rotate([90,0,0]){
-                 
-             cylinder(d=16, dikte/2);
+         //hier worden 2 cilindervomige bevestigingen gemaakt
+         union() {
+             translate([3*dikte + 5, dikte, hoogte/2]) {
+                 rotate([90,0,0]){
+                 cylinder(d=bevestigingDiameterCilinder, dikte/2);
+                 }
+             }
+             translate([lengte-((3*dikte) + 5), dikte, hoogte/2]) {
+                 rotate([90,0,0]){
+                 cylinder(d=bevestigingDiameterCilinder, dikte/2);
+                 }
              }
          }
-
-         translate([lengte-((3*dikte) + 5), dikte, hoogte/2]) {
-             rotate([90,0,0]){
-             cylinder(d=16, dikte/2);
-             }
-         }
-     }
-
+         //Snij de onderkant eraf met een hoek van 45°
          translate([4,dikte+fillet, hoogte/2-57]){
              rotate([45,0,0]){
              cube([lengte, 40, 40]);
              }
          }
-
          translate([0,-(dikte*1.46), hoogte/2]){
              cube([lengte, dikte*2, 10]);
              }
          }
      }
 
-module gaten() {
+//Deze module produceert gaten afhankelijk van de M-variant de gebruiker wilt
+// Voor M3 geef een parameter 3 mee, voor M4 een parameter 4, enz. enz.
+module gaten(M) {
     dikte = dikte*2;
-     union() {
-
-                translate([3*dikte+5,20,hoogte/2+4]){
-                    rotate([90,0,0]){
-                    cylinder(d=2,20);
-                    }
-                }
-                translate([lengte-((3*dikte)+5),20,hoogte/2+4]){
-                    rotate([90,0,0]){
-                    cylinder(d=2,20);
-                    }
-                }
-                translate([3*dikte+5,breedte+5,hoogte/2-4]){
-                    rotate([90,0,0]){
-                    cylinder(d=2,20);
-                    }
-                }
-                translate([lengte-((3*dikte)+5),breedte+5,hoogte/2-4]){
-                    rotate([90,0,0]){
-                    cylinder(d=2,20);
-                    }
-                }
+    union() {
+        translate([3*dikte+5,20,hoogte/2+4]){
+            rotate([90,0,0]){
+            cylinder(d=schroefgatendiameterCilinder*M,20);
             }
         }
-
-
-
-
- module ventilatiegaten(top) {
-     afmeting = dikte*2;
-
-     union() {
-         if(top == 1) {
-             for(i=[0:dikte:lengte/4]){
-             translate([10+i,0,1]){
-                    cube([ventilatiegatenBoven,afmeting,hoogte/4]);
-                    }
-                    translate([(lengte-10) - i,0,1]){
-                    cube([ventilatiegatenBoven,afmeting,hoogte/4]);
-                    }
-                    translate([(lengte-10) - i,breedte-afmeting,1]){
-                    cube([ventilatiegatenBoven,afmeting,hoogte/4]);
-                    }
-                    translate([10+i,breedte-afmeting,1]){
-                    cube([ventilatiegatenBoven,afmeting,hoogte/4]);
+        translate([lengte-((3*dikte)+5),20,hoogte/2+4]){
+            rotate([90,0,0]){
+            cylinder(d=schroefgatendiameterCilinder*M,20);
                     }
                 }
-
-     }
-
-     if(top == 0) {
-
-         for(i=[0:dikte:lengte/4]){
-             translate([10+i,0,1]){
-                    cube([ventilatiegatenOnder,afmeting,hoogte/4]);
-                    }
-                    translate([(lengte-10) - i,0,1]){
-                    cube([ventilatiegatenOnder,afmeting,hoogte/4]);
-                    }
-                    translate([(lengte-10) - i,breedte-afmeting,1]){
-                    cube([ventilatiegatenOnder,afmeting,hoogte/4]);
-                    }
-                    translate([10+i,breedte-afmeting,1]){
-                    cube([ventilatiegatenOnder,afmeting,hoogte/4]);
-                    }
-                }
-
-     }
- }
-
-
-
-
-
-
-
-
-
+        translate([3*dikte+5,breedte+5,hoogte/2-4]){
+            rotate([90,0,0]){
+            cylinder(d=schroefgatendiameterCilinder*M,20);
+            }
+        }
+        translate([lengte-((3*dikte)+5),breedte+5,hoogte/2-4]){
+            rotate([90,0,0]){
+                cylinder(d=schroefgatendiameterCilinder*M,20);
+            }
+        }
+    }
 }
 
-//ronding();
+//Deze module produceert ventilatiegaten en krijgt een parameter mee of het de 
+//bovenkant of onderkant is (verschillende ventilatiegaten worden geproduceerd
+//afhankelijk hiervan).
+ module ventilatiegaten(top) {
+     union() {
+         //Indien het om de bovenkant gaat
+         if(top == 1) {
+             for(i=[0:dikte:lengte/4]){
+                 translate([10+i,-ventilatiegatenDikte+ventilatiegatenLengte,1]){
+                    cube([ventilatiegatenSpacingBoven,ventilatiegatenDikte,hoogte/4]);
+                 }
+                 translate([(lengte-10) - i,-ventilatiegatenDikte+ventilatiegatenLengte,1]){
+                    cube([ventilatiegatenSpacingBoven,ventilatiegatenDikte,hoogte/4]);
+                 }
+                 translate([(lengte-10) - i,breedte-ventilatiegatenLengte,1]){
+                    cube([ventilatiegatenSpacingBoven,ventilatiegatenDikte,hoogte/4]);
+                 }
+                 translate([10+i,breedte-ventilatiegatenLengte,1]){
+                    cube([ventilatiegatenSpacingBoven,ventilatiegatenDikte,hoogte/4]);
+                 }
+             }
+         }
+
+     if(top == 0) {
+         for(i=[0:dikte:lengte/4]){
+             translate([10+i,-ventilatiegatenDikte+ventilatiegatenLengte,1]){
+                 cube([ventilatiegatenSpacingOnder,ventilatiegatenDikte,hoogte/4]);
+             }
+             translate([(lengte-10) - i,-ventilatiegatenDikte+ventilatiegatenLengte,1]){
+                 cube([ventilatiegatenSpacingOnder,ventilatiegatenDikte,hoogte/4]);
+             }
+             translate([(lengte-10) - i,breedte-ventilatiegatenLengte,1]){
+                 cube([ventilatiegatenSpacingOnder,ventilatiegatenDikte,hoogte/4]);
+             }
+             translate([10+i,breedte-ventilatiegatenLengte,1]){
+                 cube([ventilatiegatenSpacingOnder,ventilatiegatenDikte,hoogte/4]);
+             }
+         }
+     }
+ }
+ }
+
 //doos();
-//ventilatiegaten(0);
-
 //bevestiging();
+//gaten();
+//ventilatie();
 
+/******     Onderkant     ******/
+//Het verschil nemen tussen de doos met bevestigingen en de
+//ventilatiegaten en bevestigingsgaten.
 difference() {
-    difference() {
+        //Samenvoegen van de doos met de bevestiging.
         union() {
             doos();
             bevestiging();
-
-
         }
-
-    }
-    gaten();
+    gaten(3);
     ventilatiegaten(0);
 }
 
+/******     Bovenkant     ******/
+translate([0,breedte, hoogte+10]){
+    rotate([0,180,180], center = true) {
+        difference() {
+            union() {
+                doos();
+                bevestiging();
+            }
+            gaten(3);
+            ventilatiegaten(1);
+        }
+    }
+}
 
-  //doos();
-  //bevestiging();
-//doos();
-//bevestiging();
+
