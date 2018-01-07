@@ -20,6 +20,5 @@ Major components used in this project:
 
 The project contains the following folders:
 - PCB design: here you can find everything of the PCB design.
-- 3D printing: an OpenSCAD model of the enclossure I've build (based on the The Ultimate Parametric Box by Heartman).
-- Lasercutting: the design of the plexiglass used for the turtle sun tank.
+- 3D printing & lasercutting: an OpenSCAD model of the enclossure I've build (based on the The Ultimate Parametric Box by Heartman) and the design of the plexiglass used for the turtle sun tank.
 - Code: the code written for the project.
