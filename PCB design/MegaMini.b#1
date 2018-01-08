@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1559,7 +1559,6 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1920,27 +1919,6 @@ design rules under a new name.</description>
 <wire x1="44.2576" y1="54.7732" x2="29.0176" y2="54.7732" width="0.1524" layer="16"/>
 <wire x1="45.6292" y1="53.4016" x2="44.2576" y2="54.7732" width="0.1524" layer="16"/>
 <wire x1="45.6292" y1="53.4016" x2="45.68" y2="53.3" width="0.1524" layer="16"/>
-<contactref element="IC1" pad="30"/>
-<contactref element="R6" pad="1"/>
-<contactref element="RST_SW" pad="1"/>
-<wire x1="31.456" y1="27.9508" x2="31.456" y2="28.7128" width="0.1524" layer="1"/>
-<wire x1="29.17" y1="25.6648" x2="31.456" y2="27.9508" width="0.1524" layer="1"/>
-<wire x1="27.7984" y1="25.6648" x2="29.17" y2="25.6648" width="0.1524" layer="1"/>
-<wire x1="27.3412" y1="25.2076" x2="27.7984" y2="25.6648" width="0.1524" layer="1"/>
-<wire x1="27.3412" y1="15.7588" x2="27.3412" y2="25.2076" width="0.1524" layer="1"/>
-<wire x1="27.7984" y1="15.3016" x2="27.3412" y2="15.7588" width="0.1524" layer="1"/>
-<wire x1="31.456" y1="28.7128" x2="31.52" y2="28.79" width="0.1524" layer="1"/>
-<wire x1="27.7984" y1="15.3016" x2="27.9" y2="15.16" width="0.1524" layer="1"/>
-<wire x1="21.2452" y1="30.2368" x2="21.55" y2="30.2368" width="0.1524" layer="1"/>
-<wire x1="19.4164" y1="28.408" x2="21.2452" y2="30.2368" width="0.1524" layer="1"/>
-<wire x1="19.4164" y1="26.4268" x2="19.4164" y2="28.408" width="0.1524" layer="1"/>
-<wire x1="20.788" y1="25.0552" x2="19.4164" y2="26.4268" width="0.1524" layer="1"/>
-<wire x1="20.788" y1="22.312" x2="20.788" y2="25.0552" width="0.1524" layer="16"/>
-<wire x1="27.7984" y1="15.3016" x2="20.788" y2="22.312" width="0.1524" layer="16"/>
-<wire x1="21.55" y1="30.2368" x2="21.55" y2="30.26" width="0.1524" layer="1"/>
-<wire x1="27.7984" y1="15.3016" x2="27.9" y2="15.16" width="0.1524" layer="16"/>
-<via x="20.788" y="25.0552" extent="1-16" drill="0.3048"/>
-<wire x1="19.4164" y1="28.408" x2="13.3204" y2="32.98" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="Y2" pad="1"/>
@@ -2588,6 +2566,28 @@ design rules under a new name.</description>
 <wire x1="46.696" y1="11.644" x2="46.696" y2="23.6836" width="0.1524" layer="1"/>
 <wire x1="48.22" y1="10.12" x2="46.696" y2="11.644" width="0.1524" layer="1"/>
 <wire x1="43.648" y1="30.694" x2="43.52" y2="30.79" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="IC1" pad="30"/>
+<contactref element="R6" pad="1"/>
+<contactref element="RST_SW" pad="1"/>
+<wire x1="31.456" y1="27.9508" x2="31.456" y2="28.7128" width="0.1524" layer="1"/>
+<wire x1="29.17" y1="25.6648" x2="31.456" y2="27.9508" width="0.1524" layer="1"/>
+<wire x1="27.7984" y1="25.6648" x2="29.17" y2="25.6648" width="0.1524" layer="1"/>
+<wire x1="27.3412" y1="25.2076" x2="27.7984" y2="25.6648" width="0.1524" layer="1"/>
+<wire x1="27.3412" y1="15.7588" x2="27.3412" y2="25.2076" width="0.1524" layer="1"/>
+<wire x1="27.7984" y1="15.3016" x2="27.3412" y2="15.7588" width="0.1524" layer="1"/>
+<wire x1="31.456" y1="28.7128" x2="31.52" y2="28.79" width="0.1524" layer="1"/>
+<wire x1="27.7984" y1="15.3016" x2="27.9" y2="15.16" width="0.1524" layer="1"/>
+<wire x1="21.2452" y1="30.2368" x2="21.55" y2="30.2368" width="0.1524" layer="1"/>
+<wire x1="19.4164" y1="28.408" x2="21.2452" y2="30.2368" width="0.1524" layer="1"/>
+<wire x1="19.4164" y1="26.4268" x2="19.4164" y2="28.408" width="0.1524" layer="1"/>
+<wire x1="20.788" y1="25.0552" x2="19.4164" y2="26.4268" width="0.1524" layer="1"/>
+<wire x1="20.788" y1="22.312" x2="20.788" y2="25.0552" width="0.1524" layer="16"/>
+<wire x1="27.7984" y1="15.3016" x2="20.788" y2="22.312" width="0.1524" layer="16"/>
+<wire x1="21.55" y1="30.2368" x2="21.55" y2="30.26" width="0.1524" layer="1"/>
+<wire x1="27.7984" y1="15.3016" x2="27.9" y2="15.16" width="0.1524" layer="16"/>
+<via x="20.788" y="25.0552" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="GND">
 <contactref element="RST_SW" pad="2"/>

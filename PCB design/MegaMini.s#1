@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7042,15 +7042,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="322.58" y1="297.18" x2="337.82" y2="297.18" width="0.1524" layer="91"/>
 <label x="337.82" y="297.18" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="IC1" gate="1" pin="RESET"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="375.92" y1="375.92" x2="370.84" y2="375.92" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="375.92" x2="370.84" y2="391.16" width="0.1524" layer="91"/>
-<pinref part="RST_SW" gate="G$1" pin="1"/>
-<wire x1="370.84" y1="391.16" x2="368.3" y2="391.16" width="0.1524" layer="91"/>
-<junction x="370.84" y="391.16"/>
-</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -7618,6 +7609,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC1" gate="1" pin="(WR)PG0"/>
 <wire x1="447.04" y1="226.06" x2="454.66" y2="226.06" width="0.1524" layer="91"/>
 <label x="454.66" y="226.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="RESET"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="375.92" x2="370.84" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="375.92" x2="370.84" y2="391.16" width="0.1524" layer="91"/>
+<pinref part="RST_SW" gate="G$1" pin="1"/>
+<wire x1="370.84" y1="391.16" x2="368.3" y2="391.16" width="0.1524" layer="91"/>
+<junction x="370.84" y="391.16"/>
 </segment>
 </net>
 <net name="GND" class="0">
