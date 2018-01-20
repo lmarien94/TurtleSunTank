@@ -14,7 +14,7 @@ For this project I've decided to design an small microcontroller based on an Atm
 Major components used in this project:
 - MCU: Atmega 2560
 - RTC: DS1307
-- temperature sensor: ds18b20 (waterproof version)
+- temperature sensor: DS18B20 (waterproof version)
 - temperature & humidity sensor: DHT11
 - LCD: standard 16x2 I2C LCD
 - Relay module: standard 2 channel relay module
