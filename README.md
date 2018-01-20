@@ -4,6 +4,7 @@ Since reptiles are classified as ectothermic, which means that they are unable t
 It can perform the following tasks:
 - Switch the lights automatically on/off based on the time,
 - Adjust the lighting depending on the temperature & humidity in the sun tank,
+- Switch the heating element for the water on/off based on the water temperature,
 - Displaying the temperature & humidity in the sun tank on an LCD,
 - Displaying the temperature of the water on an LCD.
 
